@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="ChromeTest">
+	<parameter name="targetBrowser" value= "chrome" />
+    <classes>
+      <class name="clientWeb.testScript.LoginPageTest"/>
+      <class name="clientWeb.testScript.DashboardTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+   <test name="FirefoxTest">
+		 <parameter name="targetBrowser" value= "firefox" />
+		   <classes>
+		     	 <class name="clientWeb.testScript.DashboardTest"/>
+		   </classes>
+	 </test>
+</suite> <!-- Suite -->
